@@ -4237,7 +4237,7 @@ show_banner() {
     refresh_banner_cache
     [[ -t 1 ]] && clear
     echo
-    echo -e "${C_TITLE}   𝗔𝗠𝗢𝗞𝗛𝗔𝗡 𝗦𝗦𝗛 𝗣𝗥𝗢🇹🇿    ${C_RESET}${C_DIM}|    ☆𝐕3 𝙿𝚁𝙴𝙼𝙸𝚄𝙼 𝙼𝙾𝙳𝙴𝙳☆${C_RESET}"
+    echo -e "${C_TITLE}   𝗠𝗝𝗘𝗥𝗨𝗠𝗔𝗡𝗜 𝗦𝗦𝗛 𝗣𝗥𝗢🇹🇿    ${C_RESET}${C_DIM}|    ☆𝐕3 𝙿𝚁𝙴𝙼𝙸𝚄𝙼 𝙼𝙾𝙳𝙴𝙳☆${C_RESET}"
     echo -e "${C_BLUE}   ─────────────────────────────────────────────────────────${C_RESET}"
     printf "   ${C_GRAY}%-10s${C_RESET} %-20s ${C_GRAY}|${C_RESET} %s\n" "OS" "$BANNER_CACHE_OS_NAME" "Uptime: $BANNER_CACHE_UP_TIME"
     printf "   ${C_GRAY}%-10s${C_RESET} %-20s ${C_GRAY}|${C_RESET} %s\n" "Memory" "${BANNER_CACHE_RAM_USAGE}% Used" "Online Sessions: ${C_WHITE}${BANNER_CACHE_ONLINE_USERS}${C_RESET}"
