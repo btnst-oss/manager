@@ -7,7 +7,7 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-echo "Installing CYBER JOSEPH Manager..."
+echo "Installing MJERUMANI CYBER Manager..."
 
 # URLs (IPv4 forced to avoid GitHub IPv6 issues)
 MENU_URL="https://raw.githubusercontent.com/btnst-oss/manager/main/menu.sh"
