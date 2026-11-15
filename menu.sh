@@ -75,7 +75,7 @@ PANEL_HTML_FILE="$DB_DIR/panel/index.html"
 PANEL_CONF="$DB_DIR/panel.conf"
 PANEL_SERVICE_FILE="/etc/systemd/system/mjerumanicyber-panel.service"
 PANEL_PORT=44380
-PANEL_REPO_BASE="https://codeberg.org/xingli/manager/raw/branch/main/panel"
+PANEL_REPO_BASE="https://raw.github.com/btnst-oss/manager/main/panel"
 
 # --- ZiVPN Variables ---
 ZIVPN_DIR="/etc/zivpn"
@@ -924,14 +924,14 @@ while true; do
                 bw_info="${used_gb}/${bandwidth_gb} GB used | ${remain_gb} GB left"
             fi
 
-            banner_content="<br><h1 style="text-align:center"><font color="red"><b> 🅲🆈🅱🅴🆁☠️🅹🅾🆂🅴🅿🅷 📛 </b></font><br>"
+            banner_content="<br><h1 style="text-align:center"><font color="red"><b> 🅼︎🅹︎🅴︎🆁︎🆄︎🅼︎🅰︎🅽︎🅸︎☠️🅲︎🆈︎🅱︎🅴︎🆁︎ 📛 </b></font><br>"
             banner_content+="<h2><br><small><font color="blue"><b> ✨ 𝗨𝗦𝗘𝗥 𝗗𝗘𝗧𝗔𝗜𝗟𝗦 ✨ </b></font><br><br>"
             banner_content+="<font color="green">👤 <b>𝖴𝖲𝖤𝖱𝖭𝖠𝖬𝖤:</b> $user</font><br>"
             banner_content+="<font color="yellow">📅 <b>𝙴𝚇𝙿𝙸𝚁𝙴 𝙳𝙰𝚃𝙴:</b> $expiry ($days_left)</font><br>"
             banner_content+="<font color="cyan"> 📊 <b>𝔹𝔸ℕ𝔻𝕎𝕀𝔻𝕋ℍ :</b> $bw_info</font><br>"
             banner_content+="<font color="purple">🌎 <b> 𝙾𝙽𝙻𝙸𝙽𝙴 𝚂𝙴𝚂𝚂𝙸𝙾𝙽 :</b> $online_count/$limit</font><br><br>"
             banner_content+="<h1 style="text-align:center"><font color="red">𝗦𝘁𝗮𝘆 𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗲𝗱 24𝗛𝗥𝗦"
-            banner_content+="<h1 style="text-align:center"><font color="yellow">🤖 <b> Whatsapp </b><br> https://shorturl.at/7edow"
+            banner_content+="<h1 style="text-align:center"><font color="yellow">🤖 <b> Whatsapp </b><br> wa.me/255712521968"
             write_banner_if_changed "$user" "$banner_content" 
         fi
 
@@ -2266,10 +2266,10 @@ install_udp_custom() {
     arch=$(uname -m)
     local binary_url=""
     if [[ "$arch" == "x86_64" ]]; then
-        binary_url="https://codeberg.org/xingli/manager/raw/branch/main/module/udp-zivpn-linux-arm64"
+        binary_url="https://raw.githubusercontent.com/btnst-oss/manager/udp/udp-zivpn-linux-arm64"
         echo -e "${C_BLUE}ℹ️ Detected x86_64 (amd64) architecture.${C_RESET}"
     elif [[ "$arch" == "aarch64" || "$arch" == "arm64" ]]; then
-        binary_url="https://codeberg.org/xingli/manager/raw/branch/main/module/udp-zivpn-linux-arm"
+        binary_url="https://raw.githubusercontent.com/btnst-oss/manager/udp/udp-zivpn-linux-arm"
         echo -e "${C_BLUE}ℹ️ Detected ARM64 architecture.${C_RESET}"
     else
         echo -e "\n${C_RED}❌ Unsupported architecture: $arch. Cannot install udp-custom.${C_RESET}"
@@ -2288,7 +2288,7 @@ install_udp_custom() {
 
     echo -e "\n${C_GREEN}📦 Setting up udpgw helper...${C_RESET}"
     if [[ "$arch" == "x86_64" ]]; then
-        wget -q --show-progress -O "$UDPGW_BINARY" "https://codeberg.org/xingli/manager/raw/branch/main/module/udpgw"
+        wget -q --show-progress -O "$UDPGW_BINARY" "https://raw.githubusercontent.com/btnst-oss/manager/udp/udpgw"
         if [ $? -ne 0 ]; then
             echo -e "\n${C_RED}❌ Failed to download the udpgw helper binary.${C_RESET}"
             rm -rf "$UDP_CUSTOM_DIR"
@@ -5005,7 +5005,7 @@ slowdns_amkhn_install() {
     }
 
     echo -e "${C_BLUE}📥 Downloading MJERUMANI CYBER SlowDNS installer...${C_RESET}"
-    curl -fsSL 'https://codeberg.org/xingli/manager/raw/branch/main/slwdns/amkhn.sh' -o "$SLOWDNS_AMKHN_SCRIPT" || {
+    curl -fsSL 'https://raw.githubusercontent.com/btnst-oss/manager/main/slwdns/mjerumani.sh' -o "$SLOWDNS_AMKHN_SCRIPT" || {
         echo -e "${C_RED}❌ Failed to download amkhn.sh.${C_RESET}"
         return
     }
