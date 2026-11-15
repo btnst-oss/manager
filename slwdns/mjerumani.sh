@@ -742,8 +742,8 @@ EOF
     echo -e "${GREEN}${BOLD}║${NC}    ${WHITE}🔧 Ready for DNS tunneling${NC}                         ${GREEN}${BOLD}║${NC}"
     echo -e "${GREEN}${BOLD}╚══════════════════════════════════════════════════════════╝${NC}"
     
-    echo -e "\n${YELLOW}${BOLD}📞 Need help? Contact support: @esimfreegb${NC}"
-    echo -e "${YELLOW}${BOLD}💡 Documentation: https://github.com/chiddy80/Halotel-Slow-DNS${NC}"
+    echo -e "\n${YELLOW}${BOLD}📞 Need help? Contact support: wa.me/255 712 521 968${NC}"
+    echo -e "${YELLOW}${BOLD}💡 Documentation: https://github.com/btnst-oss${NC}"
     
     # Finish: wait for Enter once, then return to the shell (no sub-menu)
     echo -e "\n${YELLOW}Installation finished at: $(date)${NC}"
@@ -763,9 +763,4 @@ else
     echo -e "\n${RED}✗ Installation failed${NC}"
     exit 1
 fi
-
-
-
-
-
 
