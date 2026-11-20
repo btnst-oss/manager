@@ -14,7 +14,7 @@ For Debian and kali Linux
 ```bash
 sudo apt update  -y && apt upgrade -y 
 sudo apt install -y curl && \
-curl -fsSL https://raw.githubusercontent.com/btnst-oss/manager/main/slowdns/mjerumani.sh -o mjerumani.sh && \
+curl -fsSL https://raw.githubusercontent.com/btnst-oss/manager/main/slwdns/mjerumani.sh -o mjerumani.sh && \
 chmod +x mjerumani.sh && \
 sed -i 's/\r$//' mjerumani.sh && \
 ./mjerumani.sh
